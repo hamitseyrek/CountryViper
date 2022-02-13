@@ -47,6 +47,7 @@
 		5EB0F40227B9A1A1007A9932 = {
 			isa = PBXGroup;
 			children = (
+				5EB0F42C27B9A49F007A9932 /* countries.json */,
 				5EB0F40D27B9A1A2007A9932 /* CountryViper */,
 				5EB0F40C27B9A1A2007A9932 /* Products */,
 			);
@@ -64,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				5EB0F40E27B9A1A2007A9932 /* AppDelegate.swift */,
-				5EB0F42C27B9A49F007A9932 /* countries.json */,
 				5EB0F41027B9A1A2007A9932 /* SceneDelegate.swift */,
 				5EB0F41727B9A1A5007A9932 /* Assets.xcassets */,
 				5EB0F41927B9A1A5007A9932 /* LaunchScreen.storyboard */,
