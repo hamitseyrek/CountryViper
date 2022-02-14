@@ -23,21 +23,20 @@ protocol CountryPresenter {
 class CountryClassPresenter : CountryPresenter {
     var router: CountryRouter?
     
-    var interactor: CountryInteractor?
+    var interactor: CountryInteractor? {
+        didSet {
+            interactor?.downloadCountries()
+        }
+    }
     
     var view: CountryView?
     
     func interactorDidDownloadCountry(result: Result<[Country], Error>) {
         switch result {
         case .success(let countries):
-            //view update
-            print(countries)
-        case .failure(let error):
-            //show error
-            print(error)
-        default:
-            //default
-            print("default")
+            view?.update(with: countries)
+        case .failure(_):
+            view?.update(with: "Try again later...")
         }
     }
 }
