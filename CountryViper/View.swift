@@ -6,4 +6,10 @@
 //
 
 import Foundation
+import UIKit
 
+protocol CountryView {
+}
+
+class CountryViewcontroller : UIViewController, CountryView {
+}
